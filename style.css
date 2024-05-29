@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #0D1B2A;
+    background-color: #E0FBFC;
     color: white;
     font-family: 'poppins', sans-serif;
 }
@@ -14,7 +14,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background-color: #415A77;
+    background-color: #253237;
 }
 
 nav ul {
@@ -27,6 +27,22 @@ nav ul li {
     margin: 0 25px;
 }
 
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    color: white;
+    font-size: large;
+    background-color: #253237;
+    border: none;
+}
+
+button:hover{
+    box-shadow: 5px 5px 10px white;
+    font-size: 1.25rem;
+}
 .left {
     font-size: 1.75rem;
 }
@@ -35,42 +51,41 @@ nav ul li {
     display: flex;
     justify-content: space-around;
     margin: 25px 0;
+    width: 100%;
 }
 
-.firstSection div {
-    width: 30%;
-}
 
 .leftSection {
+    height: 100svh;
+    width: 50%;
     display: flex;
-    flex-direction: row;
-    font-size: 2rem;
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em;
-    /* Adjust as needed */
-    animation:
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-family: "poppins", sans-serif;
+    margin-left: 50px;
 }
 
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
+anime{
+    overflow: hidden;
+    width: fit-content;
+    animation: typewriter infinite normal 5s ease;
+}
+@keyframes typewriter {
+    from{width: 0}
+    to{width: 100%}
+}
 
-.rightSection img {
-    width: 100%;
-    margin: 50px 0;
+.rightSection {
+    width: 50%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 300px;
+    width: 300px;
 }
