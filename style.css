@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #E0FBFC;
+    background-color: #C2DFE3;
     color: white;
     font-family: 'poppins', sans-serif;
 }
@@ -67,14 +67,9 @@ button:hover{
     margin-left: 50px;
 }
 
-anime{
-    overflow: hidden;
-    width: fit-content;
-    animation: typewriter infinite normal 5s ease;
-}
-@keyframes typewriter {
-    from{width: 0}
-    to{width: 100%}
+#element{
+    color: blueviolet;
+    font: bolder;
 }
 
 .rightSection {

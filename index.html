@@ -33,13 +33,21 @@
         <section class="firstSection">
             <div class="leftSection">
                 <h1 style="color: olive;">Hi, My name is <span style="color: blueviolet;">Aadish</span></h1>
-                <h1 style="color: olive;">and I want to be a <span class="anime" style="color: blueviolet;">Web Developer</span></h1>
+                <h1 style="color: olive;">and I am an aspiring</h1>
+                <span id="element"></span>
             </div>
             <div class="rightSection">
                 <img src="Developer.png" alt="Loading image">
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer'],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 
 </html>
